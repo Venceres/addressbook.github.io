@@ -1,0 +1,100 @@
+body {
+    margin:0px;
+}
+
+.container {
+    position:relative;
+    width:600px;
+    margin:auto;
+}
+
+.title {
+    padding:10px;
+    border-bottom:2px solid;
+    background:lavenderblush;
+}
+
+.title h1 {
+    margin: 0px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.add {
+    padding:10px;
+    border-bottom:1px solid;
+    text-align: center;
+}
+
+#Add {
+    padding:6px;
+}
+
+.addForm, .editForm {
+    height:290px;
+    padding:10px;
+    background:lavenderblush;
+    overflow:hidden;
+    display:none;
+}
+
+.addForm label,.editForm label  {
+    position: relative;
+    display: block;
+    font-family: sans-serif;
+    font-size: 13px;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.addForm input,textarea, .editForm input,textarea {
+    width: 96%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+#Save, #Cancel, #Save2, #Cancel2 {
+    padding: 10px;
+    left: 300px;
+    margin-left: 138px;
+}
+
+.list {
+background:lavenderblush;
+width:600px;
+height:40px;
+border-bottom:1px solid;
+}
+
+
+.list .name {
+width:150px;
+float:left;
+padding:11px;
+}
+
+.list .email {
+width:130px;
+float:left;
+padding:11px;
+}
+
+
+.list .phone {
+width:170px;
+float:left;
+padding:11px;
+}
+
+.list p {
+margin:0px;
+font-family:sans-serif;
+font-size:14px;
+}
+
+
+
+
+
