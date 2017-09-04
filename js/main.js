@@ -27,9 +27,10 @@ window.onload = function(){
 		addFormDiv.style.display = "none";
 	});
 
-	cancelBtn2.onclick = function () {
-        editFormDiv.style.display = "none";
-    };
+	cancelBtn2.addEventListener("click", function () {
+		editFormDiv.style.display = "none";
+    });
+
 
 	saveBtn.addEventListener("click", addToBook);
 	addBookDiv.addEventListener("click", removeEntry);
@@ -59,9 +60,12 @@ window.onload = function(){
 	function removeEntry(e){
 		if(e.target.classList.contains('delbutton')){
 			var remID = e.target.getAttribute('data-id');
-			addressBook.splice(remID,1);
-			localStorage['addbook'] = JSON.stringify(addressBook);
-			showAddressBook();
+			if (confirm("Удалить контакт?"))
+			{addressBook.splice(remID,1);
+                localStorage['addbook'] = JSON.stringify(addressBook);
+                showAddressBook();}
+                else
+			{showAddressBook();}
 		}
 	}
 
